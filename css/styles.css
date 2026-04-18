@@ -380,6 +380,54 @@ h3 {
   max-width: 860px;
 }
 
+.section-3d {
+  border-block: 1px solid rgba(0, 212, 255, 0.12);
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(0, 212, 255, 0.08), transparent),
+    radial-gradient(ellipse 60% 50% at 90% 30%, rgba(124, 58, 237, 0.1), transparent),
+    rgba(5, 8, 16, 0.35);
+}
+
+.section-3d-inner {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.section-3d-visual {
+  text-align: center;
+}
+
+.section-3d-visual img {
+  width: min(220px, 70vw);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(0, 212, 255, 0.25));
+}
+
+.section-3d-copy p + p {
+  margin-top: 0.85rem;
+}
+
+.section-3d-copy strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.section-3d-list {
+  margin: 1.1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.section-3d-list li + li {
+  margin-top: 0.35rem;
+}
+
+.section-3d-cta {
+  margin-top: 1.5rem;
+}
+
 .stats-grid {
   margin-top: 1.5rem;
   display: grid;
@@ -440,6 +488,16 @@ h3 {
   color: var(--color-accent);
 }
 
+.step-card p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.service-card p strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 .cta-section {
   padding-top: 1rem;
   padding-bottom: 4rem;
@@ -458,6 +516,64 @@ h3 {
 .cta-box p {
   max-width: 760px;
   margin: 0.6rem auto 0;
+}
+
+.cta-box-narrow {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-box-left {
+  text-align: left;
+}
+
+.cta-box-left p {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none;
+}
+
+.cta-box-title-center {
+  text-align: center;
+}
+
+.cta-box-intro {
+  text-align: center;
+  margin-bottom: 1rem !important;
+}
+
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+.cta-actions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn-store {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.cta-url-line {
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.link-accent {
+  color: var(--color-accent);
+}
+
+.link-accent:hover {
+  text-shadow: var(--glow-cyan);
+}
+
+.section-lead {
+  margin-bottom: 1.25rem;
 }
 
 .btn-whatsapp {
@@ -693,6 +809,11 @@ h3 {
 
   .two-col {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .section-3d-inner {
+    grid-template-columns: minmax(0, 240px) 1fr;
+    gap: 2.5rem;
   }
 
   .stats-grid {
